@@ -1,0 +1,550 @@
+body{
+  background: #282828;
+  color: #bcbec0;
+  padding-bottom:0!important;
+/*  font-family: 'Montserrat', sans-serif;*/
+}
+body:before{
+  background: #EA5A47;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+h2, h3, h4, h5{
+  /*font-family: 'Montserrat', sans-serif;*/
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 28px;
+  line-height: 30px;
+}
+h3{
+  border-left: 3px solid #ea5a47;
+  font-size: 16px;
+  line-height: 18px;
+  text-indent: 10px;
+}
+h4{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+}
+h5{
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}
+p{
+  color:#a5a5a5;
+  font-size: 13px;
+  line-height: 15px;
+}
+h3.yellow-border, .box.yellow-border{
+  border-color: #fcbe0a;
+}
+.box.green-border{
+  border-color: #48734f;
+}
+h5 i{
+  color:#909090;
+  margin-right:6px;
+}
+body .navbar-wrapper{
+  background: url("../images/carbon_fiber.png") repeat left top;
+  border-bottom: 1px solid black;
+  height: 100px;
+  margin-top: 0;
+}
+body .navbar-wrapper:before{
+  background: url("../images/highlight.png") no-repeat center center;
+  content: "";
+  height: 156px;
+  margin-top: 3px;
+  position: absolute;
+  width: 100%;
+}
+body .navbar-header .navbar-brand {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 5;
+}
+body .navbar-header .navbar-brand:before{
+  background: url("../images/bkg_carbon_fiber.png") no-repeat center center;
+  content: "";
+  height: 120px;
+  margin: 13px 0 0 -9px;
+  position: absolute;
+  width: 121px;
+}
+body .navbar-header .navbar-brand:hover h1{
+  opacity: 0.8;
+}
+body .navbar-header .navbar-brand h1{
+  background: url("../images/club_mini_de_argentina.png") no-repeat center center;
+  height: 102px;
+  margin: 22px 0 0 0;
+  position: relative;
+  text-indent: -10000px;
+  width: 102px;
+}
+body .navbar-toggle{
+  margin-top:34px;
+}
+body .navbar-collapse {
+  padding: 0;
+  border: 0 none;
+}
+body .navbar-collapse .social-media{
+  color: #909090;
+  font-size: 14px;
+  margin: 15px 10px 0 0;
+  position: absolute;
+  right: 0;
+}
+body .navbar-collapse .social-media a{
+  color: #909090;
+  margin-right: 10px;
+}
+body .navbar-collapse .social-media a:hover, body .navbar-collapse .social-media a:focus{
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 10px;
+}
+body .navbar-collapse .social-media a:last-of-type{
+  margin-right: 0;
+}
+body .navbar{
+  background: none;
+  border: 0 none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+}
+body ul.navbar-nav{
+  float: right;
+  padding-top: 55px;
+}
+body ul.navbar-nav > li {
+  margin-right: 10px;
+}
+body ul.navbar-nav > li:hover {
+  background: black;
+  border-radius: 4px;
+}
+body ul.navbar-nav > li:last-child {
+  margin-right: 0;
+}
+body ul.navbar-nav > li > a {
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+body .container{
+  max-width: 940px;
+  padding: 0;
+}
+body #myCarousel{
+  /*background: yellow;*/
+  background:black;
+  /*background: url("../images/carbon_fiber.png") repeat left top;*/
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin: 0 0 30px 0;
+}
+body #myCarousel .carousel-inner{
+  margin: 0 auto;
+  /*width: 100%;*/
+  width:940px;
+}
+body #myCarousel .carousel-inner .carousel-caption{
+  bottom:0;
+  left:0;
+  margin: 0 0 0 20px;
+  text-align: left;
+  text-shadow: none;
+}
+body #myCarousel .carousel-indicators{
+  text-align:right;
+  width: 65%;
+}
+body #myCarousel .carousel-inner .carousel-caption{
+  z-index:0;
+}
+body #myCarousel .carousel-inner .carousel-caption h2{
+  margin-top:-30px;
+}
+body #myCarousel .carousel-indicators{
+  z-index:30;
+}
+body .left.carousel-control, body .right.carousel-control{
+  z-index:20;
+}
+
+body #myCarousel .carousel-inner:before{
+  background-image: -moz-linear-gradient(left, black, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from black, to(rgba(0, 0, 0, 1)));
+  background-image: -webkit-linear-gradient(left, color-stop black, color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  content:"";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='black', endColorstr='#00000000', GradientType=1);
+  height: 300px;
+  position:absolute;
+  width:100px;
+  z-index:10;
+}
+body #myCarousel .carousel-inner:after{
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to black);
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop black 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, black 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, black 100%);
+  background-repeat: repeat-x;
+  content:"";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='black', GradientType=1);
+  height: 300px;
+  position:absolute;
+  width:100px;
+  z-index:10;
+  right:0;
+  margin-top:-300px;
+}
+body #myCarousel .item, body #myCarousel .item img{
+  height: 300px;
+}
+/*body #myCarousel .item img{
+  height: auto;
+  max-width: 100%;
+}*/
+body #myCarousel:after{
+  background: url("../images/highlight.png") no-repeat center center;
+  content: "";
+  height: 156px;
+  position: absolute;
+  width: 100%;
+}
+body .carousel-control.left, body .carousel-control.right{
+  background: none;
+}
+body .container .row{
+  margin: 0 0 20px 0;
+}
+body .container .row .featured-image h3{
+  margin-bottom: 20px;
+}
+body .container .row .featured-image a img{
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+body .container .row .featured-image img{
+  width: 100%;
+  height: auto;
+}
+body .container .row .featured-image a:hover img{
+  opacity: 0.7;
+}
+body .container .row .description{
+  background: #212121;
+  border-radius: 0 3px 3px 0;
+  margin: 40px 7px 0 -7px;
+  min-height: 326px;
+  padding: 20px;
+}
+body .container .row .description h4{
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin: 0 0 20px 0;
+  /*margin: 40px 100px 60px 0;*/
+  padding: 8px 0 18px 0;
+  /*padding:0;*/
+  text-transform: uppercase;
+}
+body .container .row .description p a{
+  color: #c64340;
+}
+body .container .row .description p a:hover{
+  color: #e74c3c;
+}
+body .container .row .description .btn-danger{
+  margin-top: 13px;
+}
+body .container .row #noticias h3{
+  margin-bottom: 20px;
+}
+body .container .row #noticias ul{
+  margin: 0;
+  padding: 0;
+}
+body .container .row #noticias ul > li{
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+body .container .row #noticias ul > li:last-child{
+  margin-bottom: 0;
+}
+body .container .row #noticias ul > li a{
+  /*padding-top: 74px;*/
+  display: block;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
+  text-transform: none;
+}
+body .container .row #noticias ul > li a i{
+  display: block;
+  font-size: 40px;
+  line-height: 69px;
+}
+body .container #institucional .box{
+  background: #212121;
+  padding: 10px 15px;
+}
+body .container #institucional .box h5{
+  margin-bottom:15px;
+}
+body .box{
+  border-left: 3px solid #ea5a47;
+}
+body .container section [class^="col-"], body .container section [class*=" col-"]{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+body footer{
+  background:none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 -1px 0 black;
+  margin: 10px auto 0 auto;
+  width:928px;
+}
+body footer .pull-left, body .pull-right{
+  padding-top: 10px;
+}
+body footer .pull-left{
+  padding-left: 7px;
+}
+body .pull-right{
+  padding-right: 7px;
+}
+body footer p small{
+  font-size:12px;
+}
+body footer a{
+  color: #a5a5a5;
+  font-size:12px;
+  font-weight:normal;
+}
+body footer a:hover, body footer a:focus{
+  color: #a5a5a5;
+  opacity:0.6;
+}
+/*body footer a:first-child{
+  margin-right:10px;
+  padding-right:10px;
+  border-right: 1px solid #a5a5a5;
+}*/
+.btn.btn-success{
+  background-color: #48734f;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #23562b;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+.btn.btn-success:hover, .btn.btn-success:focus{
+  background-color: #355b39;
+  box-shadow: 0 2px 0 #2a492c;
+}
+.btn:hover i, .btn:focus i{
+  opacity: 0.7;
+}
+.btn.btn-warning{
+  background-color: #fcbe0a;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #bf8910;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+.btn.btn-warning:hover, .btn.btn-warning:focus{
+  background-color: #e29c00;
+  box-shadow: 0 2px 0 #af7817;
+}
+.btn.btn-danger{
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #c64340;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
+.btn.btn-danger:hover, .btn.btn-danger:focus{
+  background-color: #c64340;
+  box-shadow: 0 2px 0 #af2727;
+}
+html,
+body.construccion {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+body.construccion #wrap {
+  min-height: 80%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+body.construccion #footer {
+  height: 60px;
+}
+body.construccion .navbar-wrapper{
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+body.construccion .container section{
+  padding-top:100px;
+}
+body.construccion .container section .col-md-4{
+  margin-top: 10px;
+}
+
+/* Inside Text Pages */
+body#nuestros-autos .container section, body#nuestro-club .container section, body#como-asociarte .container section, body#galeria .container section.row{
+  padding-top:60px;
+}
+
+/* Galeria */
+/*body#galeria .container section{
+  padding-top: 20px;
+}*/
+
+/* Cómo asociarte */
+body#como-asociarte .container section .main ul li {
+  color:white;
+}
+
+
+/* 980px Desktop and down */
+@media (max-width: 980px){ 
+  body .navbar .social-media{
+  display: none;
+  }
+  body #myCarousel .carousel-inner{
+  width: 100%;
+  height: auto;
+  }
+  body #myCarousel .carousel-indicators{
+  width: 76%;
+  }
+  body .container .row .featured-image{
+    padding-left:0;
+  }
+  body .container .row .featured-image h3{
+    margin-left:7px;
+  }
+  body .container .row .featured-image img{
+    display: none;
+  }
+  body .container .row .description{
+    margin: 0 0 20px 0;
+    min-height:0;
+  }
+  body .container .row .description h4:after{
+    margin: -12px -100px 0 30px;
+  }
+  body .container .row #noticias ul > li{
+    /*display: inline-block;*/
+    margin-right: 2%;
+    width: 32%;
+    float: left;
+    /*vertical-align: top;*/
+  }
+  body .container .row #noticias ul > li:last-child{
+    margin-right: 0;
+  }
+  body .container #institucional .col-md-4{
+    padding: 0;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  body .container #institucional .col-md-4:first-of-type{
+    border-top: 1px solid black;
+  }  
+  body footer{
+    width: 100%;
+  } 
+  body#nuestro-club .container section, body#como-asociarte .container section{
+    padding: 60px 10% 0 10%;
+  }
+  body footer div{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  body footer div:last-child{
+    margin-bottom:15px;
+  }
+}
+/* 768px Desktop and down */
+@media (max-width: 768px){ 
+  body .navbar-collapse {
+    padding: 0;
+    border: 0 none;
+    overflow: hidden;
+    box-shadow:none;
+    margin:-50px 0 0 -20px;
+  }
+  body ul.nav.navbar-nav{
+    background:#282828;
+    padding:0;
+    width:200px;
+  }
+  body ul.nav.navbar-nav li{
+    margin:0;
+  }
+  body ul.nav.navbar-nav li a, body ul.nav.navbar-nav li:hover{
+    border-radius:0;
+  }
+  body #myCarousel h2{
+    display: none;
+  }
+  body #myCarousel .item img{
+    /*height: auto;*/
+    object-fit: cover;
+  }
+  body#nuestro-club .container section .main p, body#como-asociarte .container section .main p{
+    font-size: 16px !important;
+    line-height: 22px;
+  }
+}
+@media (max-width: 600px){ 
+  body #myCarousel .item:first-of-type img{
+    zoom: 0.6;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+  body ul.nav.navbar-nav{
+    background:none;
+    width:100%;
+    /*position:absolute;*/
+    padding:55px 0 0 140px;
+    /*right:0;*/
+  }
+  body ul.navbar-nav > li:hover {
+    border-radius: 4px;
+  }
+  body ul.navbar-nav > li > a {
+    border-radius: 4px;
+  }
+}
