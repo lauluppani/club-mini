@@ -437,6 +437,11 @@ body .container section#main-row{
 
 /* 980px Desktop and down */
 @media (max-width: 980px){ 
+
+  body .container section#main-row{
+    display: block !important; 
+    height: auto;
+  }
   body .navbar .social-media{
   display: none;
   }
@@ -472,6 +477,9 @@ body .container section#main-row{
   }
   body .container .row #noticias ul > li:last-child{
     margin-right: 0;
+  }
+  body .container #institucional .box{
+    min-height: auto;
   }
   body .container #institucional .col-md-4{
     padding: 0;
