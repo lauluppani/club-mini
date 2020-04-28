@@ -528,7 +528,8 @@ body .container section#main-row{
     display: none;
   }
   body #myCarousel .item img{
-    /*height: auto;*/
+    height: 100%;
+    width: auto;
     object-fit: cover;
   }
   body#nuestro-club .container section .main p, body#como-asociarte .container section .main p{
